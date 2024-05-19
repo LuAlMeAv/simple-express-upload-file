@@ -1,6 +1,5 @@
 const express = require('express')
 const fileUpload = require('express-fileupload')
-const bodyParser = require('body-parser')
 const fs = require('fs')
 
 const API_URL = 'http://localhost'
@@ -10,8 +9,6 @@ const app = express()
 const port = process.env.PORT | EXPLICIT_PORT
 
 app.use(express.static(__dirname + '/frontend/'))
-
-app.use(bodyParser.json());
 
 app.use(fileUpload({
     safeFileNames: true,

@@ -283,7 +283,7 @@ h1 {
 }
 
 .success-message {
-    grid-column: 2;
+    grid-column: 1/4;
     margin: auto;
 }
 
